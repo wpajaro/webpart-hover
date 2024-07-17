@@ -2,5 +2,5 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
   "port": 4321,
   "https": true,
-  "initialPage": "https://alcart.sharepoint.com/sites/DistritoCartagena/_layouts/workbench.aspx"
+  "initialPage": "https://alcart.sharepoint.com/sites/PruebaWebPart/_layouts/workbench.aspx"
 }
