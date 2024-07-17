@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "solution-hover-client-side-solution",
+    "id": "875f3c40-262b-49dd-9aff-8eab6f86ce3e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "solution-hover description"
+      },
+      "longDescription": {
+        "default": "solution-hover description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "solution-hover Feature",
+        "description": "The feature that activates elements of the solution-hover solution.",
+        "id": "3662ea6c-6daa-4faa-990f-51b4de8d862c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/solution-hover.sppkg"
+  }
+}

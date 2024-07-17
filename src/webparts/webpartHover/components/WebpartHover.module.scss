@@ -1,0 +1,169 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+:root{
+  --var-flex-wrap: wrap;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: url('../assets/static/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Monserrat-Bold';
+  src: url('../assets/static/Montserrat-Bold.ttf');
+}
+@font-face{
+  font-family: 'WorkSans-Bold';
+  src: url('../assets/Work_Sans/static/WorkSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'Monserrat-semibold';
+  src: url('../assets/static/Montserrat-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Work-sans';
+  src: url('../assets/Work_Sans/static/WorkSans-Medium.ttf');
+}
+
+.webpartHover {
+  height: 1107px;
+  background-image: url("../assets/background-129814.svg");
+  text-align: center;
+}
+
+.recursos {
+  font-family: 'Monserrat-semibold';
+  font-size: 18px;
+  letter-spacing: 7.2px;
+  text-transform: uppercase;
+  opacity: 1;
+  color: #099D39;
+  padding-top: 5em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 0em;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.textoFrecuente {
+  font-family: 'Monserrat-Bold';
+  font-size: 40px;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #099D39;
+  padding-top: 0em;
+}
+.contenedorMayor{
+  padding-right: 10em;
+  padding-left: 3em;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: var(--var-flex-wrap);
+  direction: rtl;
+  max-width: 1000px;
+}
+.contenedor{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 300px;
+  height: 220px;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contenedor:hover{
+  background-color: #099D39;
+  box-shadow: 3px 3px 30px #099D39;
+}
+a, .contenedor{
+  text-decoration: none;
+}
+a:visited, .contenedor:visited{
+  color: inherit;
+}
+
+.textoTarjetas{
+  font-family: 'Work-sans';
+  font-size: 12px;
+  text-align: left;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  color:#000000;
+  transition: color 0.3s ease;
+}
+
+.verMas{
+  font-family: 'Work-sans';
+  font-size: 12px;
+  text-align: left;
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  color:#000000;
+  transition: color 0.3s ease;
+}
+
+.contenedor:hover .verMas{
+  color:#ffffff;
+}
+
+.contenedor:hover .textoTarjetas{
+  color:#ffffff;
+}
+
+.imageIcono{
+  position:absolute;
+  top: 20px;
+  left: 20px;
+  width: auto;
+  height: 60px;
+}
+
+.icono1 {
+  @extend .imageIcono;
+  z-index: 1;
+}
+
+.icono2 {
+  @extend .imageIcono;
+  z-index: 0;
+  opacity: 0;
+}
+
+.contenedor:hover .icono1{
+  opacity: 0;
+}
+
+.contenedor:hover .icono2{
+  opacity: 1;
+}
+
+.textoIconos{
+  font-family: 'Monserrat-Bold';
+  font-size: 20px;
+  text-align: left;
+  padding-top: 4em;
+  padding-left: 1em;
+  transition: color 0.3s ease;
+}
+.textoIconos:visited{
+  color: inherit;
+}
+
+.contenedor:hover .textoIconos{
+  color: #ffffff;
+}
